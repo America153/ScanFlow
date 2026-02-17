@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Snaplate Companion",
+    "slug": "snaplate-companion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#6C3CE1"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera is needed to scan QR codes from the Snaplate dashboard."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#6C3CE1"
+      },
+      "permissions": ["android.permission.CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Snaplate Companion to access your camera to scan QR codes."
+        }
+      ]
+    ]
+  }
+}
